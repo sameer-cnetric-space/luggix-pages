@@ -1,0 +1,233 @@
+<html>
+<head><title>LuggX - Luggage pick up @ Doorstep</title></head>
+
+<style>
+body {background-color: white;}
+.tbl    
+{
+  	padding: 1px;
+	margin: 1px;
+}
+.fontt {
+  	color: #708090;
+  	font-family: verdana;
+	font-weight: bold;
+  	font-size: 12;
+}
+.header1    
+{
+	color: #4B0082;
+	border: 0px solid;
+  	padding: 5px;
+	margin: 0px;
+  	font-family: century gothic,verdana;
+	font-weight: normal;
+  	font-size: 15;
+}
+
+* {
+        box-sizing: border-box;
+      }
+      .openBtn2 {
+        display: flex;
+        justify-content: right;
+      }
+      .openButton2 {
+        border: none;
+        border-radius: 5px;
+        background-color: #1c87c9;
+        color: white;
+        padding: 5px 5px;
+        cursor: pointer;
+       
+      }
+      .loginPopup2 {
+
+        text-align: center;
+        width: 100%;
+      }
+      .formPopup2 {
+        display: none;
+        position: fixed;
+        left: 20%;
+        top: 5%;
+        transform: translate(5%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+      .formContainer2 {
+        max-width: 400px;
+        padding: 5px;
+        background-color: #fff;
+      }
+      .formContainer2 input[type=text],
+      .formContainer2 input[type=password] {
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0 5px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer2 input[type=text]:focus,
+      .formContainer2 input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer2 .btn2 {
+        padding: 2px 2px;
+        border: none;
+        background-color: #8ebf42;
+        color: #fff;
+        cursor: pointer;
+        width: 50%;
+        margin-bottom: 0px;
+        opacity: 1;
+      }
+      .formContainer2 .cancel {
+        background-color: #800000;
+      }
+      .formContainer2 .btn2:hover,
+      .openButton2:hover {
+        opacity: .7;
+      }
+</style>
+
+<body>
+
+<!------ Header section below ----------------->
+<table align=center border=0 width="700">
+<tr>
+<td><a href="updateprofile.html"><img src="Images/header2.png" width="250" align="right"></a></td>
+</tr>
+<tr>
+<td><a href="Index.html"><img src="Images/Banner3.png" width="700" colspan=2 border=0></a>
+
+
+<div class="openBtn2">
+      <button class="openButton2" onclick="openForm2()"><strong>Connect with LuggX</strong></button>
+    </div>
+
+    <div class="loginPopup2">
+      <div class="formPopup2" id="popupForm2">
+        <form action="#" class="formContainer2">
+          
+          <label for="email2">
+            <strong>Message to LuggX</strong>
+          </label>
+          <Textarea rows="3" cols="40" name="mail1"></textarea>
+             <button type="button" class="btn2 cancel1" onclick="closeForm2()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function openForm2() {
+        document.getElementById("popupForm2").style.display = "block";
+      }
+      function closeForm2() {
+        document.getElementById("popupForm2").style.display = "none";
+      }
+    </script>
+
+
+</td>
+</tr>
+</table>
+
+<!------ Header section above ----------------->
+
+<table align=center border=0 width="700">
+<tr>
+<td colspan=3 align=center class="header1">Book your luggage</td>
+</tr>
+<tr>
+<td rowspan=10 width=200 class="fontt" valign="top" bgcolor="#F7F1EF">
+<img src="Images/thankyoupayment.png" width="199">
+</td>
+<td width="150" align="right" class="fontt">Date of journey:</td>
+<td width="250" align="left" bgcolor="#eeece1" valign="middle"><input type=date size=7>&nbsp;&nbsp;<img src="Images/infoicon.png" width="15"></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Destination:</td>
+<td width="250" align="left" bgcolor="#eeece1" valign="middle"><input type=text size=7>&nbsp;&nbsp;<img src="Images/infoicon.png" width="15"></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Break journey in the middle:</td>
+<td width="250" align="left" bgcolor="#eeece1" valign="middle"><input type=text size=7>&nbsp;&nbsp;<img src="Images/infoicon.png" width="15"></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Number of luggages:</td>
+<td width="250" align="left" bgcolor="#eeece1"><input type=text size=7></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Adhaar no.:</td>
+<td width="250" align="left" bgcolor="#eeece1"><input type=text size=7></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Passport No.:</td>
+<td width="250" align="left" bgcolor="#eeece1"><input type=text size=7></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Visa details:</td>
+<td width="250" align="left" bgcolor="#eeece1"><input type=text size=7></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Sizes/dimention of each:</td>
+<td width="250" align="left" bgcolor="#eeece1"><input type=text size=7>&nbsp;<input type=text size=7>&nbsp;<input type=text size=7></td>
+</tr>
+<tr>
+<td width="150" align="right" class="fontt">Upload the photo of each:</td>
+<td width="250" align="left" bgcolor="#eeece1"><input type=file size=5 value="">&nbsp;<input type=file size=5 value="">&nbsp;<input type=file size=5 value=""></td>
+</tr>
+<tr>
+<td width="150" align="right"><a href="thankyouforbooking.html"><img src="Images/submit_button.png" height=25></a></td>
+<td width="250" align="left"><img src="Images/cancel_button.png" height=25></td>
+</tr>
+</table>
+
+<!--- Book change Track start --->
+<br><br>
+<table align=center border=0 width="700">
+<tr>
+<td width="233" align="center"><a href="selectplan.html"><img src="Images/bookyourluggage.png" width="232"></a></td>
+<td width="233" align="center"><a href="trackluaggeandloader.html"><img src="Images/trackyourluggage.png" width="232"></a></td>
+<td width="234" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3"><hr size=1 color="#808080"></td>
+</tr>
+<tr>
+<td width="700" colspan="3" class="fontt" align="right"><a href="bookinghistory.html">View your booking history</a><br></td>
+</tr>
+</table>
+<!--- Book change Track end --->
+<!------ Footer section below ----------------->
+
+<table align=center border=0 width="700">
+<tr>
+<td colspan=3><hr size=1 color="#dfdfdf"></td>
+</tr>
+<tr>
+<td colspan=2>
+<img src="Images/downloadappimage1.png" width="500">
+</td>
+<td><img src="Images/downloadappimage2.png" width="200"></td>
+</tr>
+<tr>
+<td width="300" valign="top"><img src="Images/footercontent1.png" width=150></td>
+<td width="200" valign="top"><img src="Images/footercontent2.png" width=240></td>
+<td width="200" valign="top"><img src="Images/footercontent3.png"width=130></td>
+</tr>
+<tr>
+<td width="700" valign="top" colspan=3 align="center"><hr size=1 width="700"></td>
+</tr>
+<tr>
+<td width="700" valign="top" colspan=3 align="center"><img src="Images/footer1.png" width="700"></td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+</html>
